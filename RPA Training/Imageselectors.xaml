@@ -1,0 +1,169 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Imageselectors" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Imageselectors_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Imageselectors" sap:VirtualizedContainerService.HintSize="1145.6000000000001,995.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe Rpa'" sap:VirtualizedContainerService.HintSize="952,188" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJEAAAAsCAYAAABljFqIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOSSURBVHhe7ZxBSxtBGIb9K/kJ0lOvHj0Vj149hUKhRHoR8aKXYkHQg2CQQokgNAfBtCAVQapCIaHksCCFgBISleJSEhKwsm+Z3Rl3dnZMWseSFd6BB2RmdmbZefxm9ltxLHgxBkIewu83z9Hr9TBmNhDyL3Q6HUpE3Li+vqZExI2rqytKRNy4uLigRMSNVqtFiYgblIg4Q4mIM5SIOEOJiDOUiDhDiYgzlIg48zQkmp9CsDKNYGUKQd7STkZKtiVaLwG/YJQ+UF9O9UVTtPnApmUcQd2PLv+i1W3uG2Nr5WcNWM8lx1D9/Up6fJOFInArOntA6j70+ywaE1tKdz89fobIrkRiEW7EE/SBk8UoEn0sA135YBtJkZwkalaAg1KM15CTtIFVS39Rdg3BTKpt2XGYRDPJuZv96LJTre5zIT1+hsiuRN/kIpxMJuvza/FvuLa1OUlUtyzSkRRJb9MlapXS19wxFwbMqAyTyMB2nxknuxKFD7MPbFvaltLno0eXSLWdFdN1N8KQAXMdCgH7MpJSotERLoTYakp/dZh+dIlUJDqcsPSvRNGwsZa+TmxPoScVeU+UaHTkC/Gh+tYH6mXgg7G1aThJlDgTlYEzuZXqUUjvL6TzRDRqAAvGPNvHUZ/DCUqUCfLTwEktPkyLEgq1nIpOThLZStcDtgxpdYlWK9HP3pzWZwJoie2uFp7XKFHWELmivf1YqGYySjhJZG5n8wWgJSJNH9jR3sIS/XNhIMJtJEzYrsSqzmj3RIkyyCRwKZ6yD2zE9eGCDl0cH3iv1d0nkUC9Beo5IbP/lty6jkTEygGnyS2OEo2a7SJwUESwZGlTD3pPq/su63Ys/e8kawMrWr0pRYJCFPX0RF+qvxS6f4xgoRS1nS7Gc1KiEaPyRNqiRKhIZAihtpLLcuq8FLwrR21mpjklhWW8QZFIsFuT84r7TSYnKdGoyS/LPIt4S1JvT2XgUmbxfpifPnLxAnQbQFXLPofJSbGV3fMZw8xY1z15zaAzkRpHSywaCUhKlAVmXwJn8qGqIt7OqqZAinEEB14snyriO9jGeLr/oLcz2zVWiVROSSRGk5JSoqwhstTzQ75X6cxOInirJQrJf+PpSEQyCyUizlAi4gwlIs5QIuIMJSLOUCLiDCUizlAi4gwlIs5QIuIMJSLOUCLiTLvdpkTk4fReP4v+e2znleVvbQgZgvDm/Oun8P9Y/wH2cvIa8Sjy3QAAAABJRU5ErkJggg==" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="72f991dd-986c-44ff-b8c1-ad7152944d07" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+    <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists 'chrome.exe Rpa'" sap:VirtualizedContainerService.HintSize="952,139.2" sap2010:WorkflowViewState.IdRef="ImageFound_2">
+      <ui:ImageFound.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH4AAAAYCAYAAAA8jknPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARxSURBVGhD7ViBauM4EN3//wgRUVGzMZde2hSDSpaUDTWXbbj2XFxSaghrCM1eqdsUfLi0vEOSnchy3CTb9LqH/UBgj8aaGT3NSPIn1KgkPpmCGtVATXxFoREfIbzw4OktmCB+0rQvHRDiwNdEvyTuQ3gXI0xiswNIbkbwrqZIzI53xPTEBmm6mJodHwiNeB8OIWB7HJxzcKcFa4eANGy4N6nK/4V46ScBdXyY3H8ECR9hcxUKxDuXencM/5CC7A0xE68a8c/xBMGFh9H3CMmL/s0CC53bfOVQvYgfZkr+FCEcefBGIaKyVExmmAQrdDKkxJMGBb/KK5skPMczzB6LA+blS3w1q2FSIjdtvqI3x6uxmr6EiEyVNbCC+NTpLMvlhLbBu5acVLbLQBsEhHXg3WsfPU0w2Gcq6xgDo4IEhvapvuaVvfZRF1aDgO4u9Pilnqcxxl+FD+lYjMpn60tQyOY50gU6OG2B7HCM/ll0mcT7DlmajXl50VcZd8NC9zpG9FcHTJ+Pho1+uGBM2ezDP22D5b5n6JzrtK0Tq/Kl03dhizF+sgKvJD44oosJ0EroLMvyOAC3CMiBl+6bMc72CciOA/8xG+UZt392QImegcpeXi9GcCQWVQdeSlYkyBMTOXnOlPA86cugW6cla31emSIM9wgoH8339LcQn/P1ZQbfoSCUgja7GGfMvEQ426cgVh+TVCRtCpKaPYy178fHgmQLvVCJ1os186WNwfcYC83NUCC+1UsPdt964PsWCKFwsgyUE9rCQM9uADPpMMdIvPxwYQuCr/M6QALvgCy2jczeN4O8hyFahIBfiZcp3CYBO05nRkN4zJYSJqGfRe6HaGkl/y3EF3y96cMSleDcqMdhD4zYcH+oV1U1i/OWxUcc4em6sSpf7BPT481QIH5+uBPteIDgb21NlR3udLl87sBfsu+rlZ8ukJIKk5dnq5vJMpprYltY5ouA4efUtecl/y3Ev+6rBrn4DeI/9ws2BIJuVlHXjbXE5oYoEP/qgGsT38LwwVRKJ4B2Eci3MntF4u0vxjVz3koONgU/VTaJkh8axI/4f0T8bg/FXF7Yv1071hKbG2L7xKelun1uHr30siZQZk+Xz9QefaSWio7wlIP/MV5+H1/mpyCjQWE381vEragGlCPIVagIg9+2TLy2l8/xEoBTAuurOA2sG2uJzQ2xfeKz8tWw0R2pK0tyF2JwyNQ/gXQyyu0Z8qArD4XtkwCRuMK8JJgWDooGSvyUJV+UUz3D5YIgsLiHqRguiRDIQ9eWiReHQNaGG6jrb3IXwP1dzFMbZ1mOrBVric0N8S7Ey2vJibjiiL1JNdrk8PTzQqm9ojweu2izxViE2uD+0iKvUPAnQ1p1jNIeX3dhy31UNXYwRP9wy8Q3XYzNOD5z+Hf5T1fHWmJzQ7z7v/rkMf3ZsAXInyrxz15gVkOMX/YzapuQcZQUqwzvHeu7E1/j10RNfEVRE19R1MRXFDXxFUVNfEVRE19R1MRXFDXxFcW/9rVufdqulbYAAAAASUVORK5CYII=" />
+      </ui:ImageFound.Image>
+      <ui:ImageFound.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6ec6f411-5e6b-4132-b4f9-6efbfa6b0133" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ImageFound.Target>
+    </ui:ImageFound>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot; &quot;]" />
+    <uix:NCheckState DisplayName="Check App State 'Submit'" sap:VirtualizedContainerService.HintSize="952,470.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V4">
+      <uix:NCheckState.IfExists>
+        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,228.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Application launch successful&quot;]" />
+        </Sequence>
+      </uix:NCheckState.IfExists>
+      <uix:NCheckState.IfNotExists>
+        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,175.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Throw Exception="[new system.Exception(&quot;Application launch failed&quot;)]" sap:VirtualizedContainerService.HintSize="416,115.2" sap2010:WorkflowViewState.IdRef="Throw_1" />
+        </Sequence>
+      </uix:NCheckState.IfNotExists>
+      <uix:NCheckState.Target>
+        <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" CVScreenId="6dcfd961-f125-4add-8ef4-840a118c0215" DesignTimeRectangle="609, 984, 145, 45" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='*Submit*' class='btn uiColorButton' check:text='Submit' /&gt;" Guid="28f72104-d0c9-4134-a5bb-6a6d873a3ff9" InformativeScreenshot="e8a6cf4f8a721f85944697fb954eb5ef.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+      </uix:NCheckState.Target>
+    </uix:NCheckState>
+  </Sequence>
+</Activity>
